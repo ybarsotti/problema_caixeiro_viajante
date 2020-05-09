@@ -12,7 +12,7 @@ class Grafo(object):
         :return:
         :rtype:
         """
-        self.custo += int(custo)
+        self.custo += int(custo) if custo != '-' else 0
 
     def adiciona_arestas(self, arestas):
         self.arestas.append(arestas)
